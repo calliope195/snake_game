@@ -32,7 +32,7 @@ turtle.hideturtle()
 
 # Crerating head of the snake
 head = turtle.Turtle()
-head.speed(0)
+head.speed(2)
 head.shape("square")
 head.color("white")
 head.penup()
@@ -110,7 +110,7 @@ segments = []
 while True: #Running an infinite till the collision occurs and then game ends
     wn.update()
 
-    #Ending the game on collision with any of the walls
+    #Ending the game on collision 
     if head.xcor() > 280 or head.xcor() < -300 or head.ycor() > 240 or head.ycor() < -240:
         time.sleep(1)
         wn.bgcolor('blue')
